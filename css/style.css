@@ -11,7 +11,6 @@
 }
 .navbar-banner-container {
   max-width: 1920px;
-
   margin: 0 100px;
 }
 .nav {
@@ -19,9 +18,9 @@
   align-items: center;
   justify-content: space-between;
 }
-.brand-name{
-    font-weight: 700;
-    font-size: 2.5rem;
+.brand-name {
+  font-weight: 700;
+  font-size: 2.5rem;
 }
 .nav ul {
   list-style: none;
@@ -34,29 +33,104 @@
   color: #424242;
 }
 
-.banner-content{
-    max-width: 862px;
-    margin: 0 auto;
-    text-align: center;
+.banner-content {
+  max-width: 862px;
+  margin: 0 auto;
+  text-align: center;
 }
-.brand-title{
-    font-weight: 700;
-    font-size: 3em;
+.brand-title {
+  font-weight: 700;
+  font-size: 3em;
 }
-.brand-btn{
-    padding: 10px 15px;
-    border-radius: 5px;
-    background-color: #FF900E;
-    color: white;
-    border: none;
+.btn-primary {
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #ff900e;
+  color: white;
+  border: none;
 }
-.brand-btn:hover{
-    background: #d14a0c;
+.btn-primary:hover {
+  background: #d14a0c;
 }
-.img{
-    margin-top: 40px;
+.img {
+  margin-top: 40px;
 }
-.img img{
-    width: 100%;
+.img img {
+  width: 100%;
 }
 
+/* second section start  */
+.features-container {
+  max-width: 1920px;
+  margin: 0 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+  padding: 40px;
+}
+.team {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.team img {
+  width: 100%;
+}
+.gray{
+  color: #424242;
+}
+.features-title{
+  font-weight: 500;
+  font-size: 2.58em;
+}
+.primary-color{
+  font-weight: 700;
+  color: #ff900e;
+}
+
+/* mobile device responsive  */
+@media screen and (max-width: 576px) {
+  .bg-gray {
+    margin-top: -10px;
+  }
+  .navbar-banner-container {
+    padding: 20px;
+    max-width: 1920px;
+   
+  }
+  .nav {
+    flex-direction: column;
+  }
+  .nav ul {
+    margin-top: 0px;
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .brand-name {
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+  .brand-title {
+    font-weight: 700;
+    font-size: 2em;
+  }
+  /* section two responsive  */
+  .features-container{
+    flex-direction: column;
+  } 
+  .team{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .team img{
+    width: 250px;
+  }
+}
+
+/* medium device */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .features-container{
+    flex-direction: column;
+  }
+}
